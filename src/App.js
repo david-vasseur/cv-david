@@ -9,7 +9,7 @@ import Experience from './pages/Experience';
 function App() {
   return (
     <div className="App">
-     <BrowserRouter>
+     <BrowserRouter basename='/cv-david'>
         <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/Contact' element={<Contact />} />
