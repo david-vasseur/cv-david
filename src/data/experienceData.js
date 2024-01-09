@@ -5,7 +5,7 @@ export const experienceData = [
         name: "Story",
         location: "Avignon",
         job: "Directeur Commercial",
-        logo: "/media/story.jpg",
+        logo: "{process.env.PUBLIC_URL + '/media/story.jpg'}",
         positionTitle: "Dans le cadre de mes fonctions, je m'investis activement dans la prospection commerciale, identifiant de manière stratégique et développant un portefeuille client existant. De plus, je contribue à la croissance continue de l'entreprise en élaborant de nouveaux produits et en pilotant des projets innovants. Cela implique de rester informé des tendances de l'industrie, des demandes du marché et des avancées technologiques pour garantir que les offres restent compétitives et tournées vers l'avenir. Mes responsabilités s'étendent à la supervision complète du cycle de vie des opérations commerciales, assurant un processus fluide de l'initiation à la réalisation. Je prends en charge la gestion globale du magasin, y compris le contrôle des stocks et la supervision du personnel, garantissant une efficacité opérationnelle et la satisfaction des clients. Cette approche polyvalente me permet de contribuer de manière significative à la réussite globale et à la pérennité de l'entreprise.",
         date: "2021 - 2023",
         site: "https://www.story.fr"

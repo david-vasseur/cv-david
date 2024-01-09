@@ -7,30 +7,30 @@ const OtherSkills = () => {
             <div className='list'>
                 <ul className='liste-1'>
                     <li><i>
-                        <img className='imageIcon' src="/media/commentaire-alt-check.png" alt="" /> Word
+                        <img className='imageIcon' src={process.env.PUBLIC_URL + "/media/commentaire-alt-check.png"} alt="" /> Word
                         </i></li>
                         <li><i>
-                        <img className='imageIcon' src="/media/commentaire-alt-check.png" alt="" /> Excell
+                        <img className='imageIcon' src={process.env.PUBLIC_URL + "/media/commentaire-alt-check.png"} alt="" /> Excell
                         </i></li>
                         <li><i>
-                        <img className='imageIcon' src="/media/commentaire-alt-check.png" alt="" /> Powerpoint
+                        <img className='imageIcon' src={process.env.PUBLIC_URL + "/media/commentaire-alt-check.png"} alt="" /> Powerpoint
                         </i></li>
                         <li><i>
-                        <img className='imageIcon' src="/media/commentaire-alt-check.png" alt="" /> Github
+                        <img className='imageIcon' src={process.env.PUBLIC_URL + "/media/commentaire-alt-check.png"} alt="" /> Github
                         </i></li>                          
                 </ul>
                 <ul className='liste-2'>
                     <li><i>
-                        <img className='imageIcon' src="/media/commentaire-alt-check.png" alt="" /> Blender
+                        <img className='imageIcon' src={process.env.PUBLIC_URL + "/media/commentaire-alt-check.png"} alt="" /> Blender
                         </i></li>
                         <li><i>
-                        <img className='imageIcon' src="/media/commentaire-alt-check.png" alt="" /> Html
+                        <img className='imageIcon' src={process.env.PUBLIC_URL + "/media/commentaire-alt-check.png"} alt="" /> Html
                         </i></li>
                         <li><i>
-                        <img className='imageIcon' src="/media/commentaire-alt-check.png" alt="" /> Css
+                        <img className='imageIcon' src={process.env.PUBLIC_URL + "/media/commentaire-alt-check.png"} alt="" /> Css
                         </i></li>
                         <li><i>
-                        <img className='imageIcon' src="/media/commentaire-alt-check.png" alt="" /> JavaScript
+                        <img className='imageIcon' src={process.env.PUBLIC_URL + "/media/commentaire-alt-check.png"} alt="" /> JavaScript
                         </i></li>                          
                 </ul>
             </div>

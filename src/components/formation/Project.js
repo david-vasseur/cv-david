@@ -25,7 +25,7 @@ class Project extends Component {
                     </div>
                         <div className='image'>
                             <a href={site}>
-                            <img className='img' src={process.env.PUBLIC_URL + {logo}} alt=""/></a>
+                            <img className='img' src={logo} alt=""/></a>
                         </div>
                         <div className='icon'>
                             <img src={process.env.PUBLIC_URL + "/media/add.png"} alt="" onClick={this.handleInfo}/>
