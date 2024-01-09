@@ -1,0 +1,161 @@
+.Sidebar {
+    background-color: $color-1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
+    max-width: 350px;
+    min-width: 260px;
+    box-shadow: 0px 0px 10px #357;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 1fr 200px;
+    grid-template-areas: 
+        "1"
+        "2"
+        "3";
+
+        .id {
+            grid-area: 1;
+            text-align: center;
+            user-select: none;
+            position: relative;
+
+            .idContent {
+                position: absolute;
+                bottom: 20%;
+                
+                width: 100%;
+            
+                img {
+                    border-radius: 50%;
+                    box-shadow: 0px 0px 10px 10px rgba(234, 246, 250, 0.548);
+                    width: 180px;
+                    height: 200px;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                    letter-spacing: .2rem;
+                    margin-top: 1.5rem;
+                    color: black;
+                    text-shadow: 0 5px 4px rgba(73, 70, 70, 0.651);
+                }
+            }
+        }
+
+}
+
+
+
+
+.navigation {
+    grid-area: 2;
+    padding: 2rem 1rem;
+
+    ul {
+        height: 100%;
+        display: grid;
+
+        li {
+            padding: 1rem 0 1rem .4rem;
+            position: relative;
+            transition: 0.5s;
+
+            &:hover {
+                transform: translate(3px, 3px);
+                color: antiquewhite;
+            }
+
+            img {
+                height: 24px;
+                width: 24px;
+            }
+            a {
+                color: #333;
+                transition: 0.2s;
+                font-size: 1rem;
+                margin-left: 2rem;
+
+                &:hover {
+                    color: aliceblue;
+                }
+            }
+        }
+    }
+}
+
+
+.socialnetwork {
+    grid-area: 3;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    ul {
+        display: flex;
+        width: 250px;
+        justify-content: space-between;
+        padding: 0 14px;
+        li{
+            padding: .5rem .8rem;
+            transition: 0.4s;
+            &:hover {
+                scale: 1.2;
+            }
+            img {
+                height: 50px;
+                width: 50px;
+            }
+        }
+    }
+}
+
+.signature {
+    
+
+    p{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px)  {
+        .Sidebar {
+            display: block;
+            width: 99% !important;
+            max-width: none;
+            margin: .2rem;
+            .id {
+                display: none;
+            
+            }
+            .navigation {
+                padding: 32px 0;
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        a {
+                            margin: 0;
+                        }
+                        padding: 16px 0;
+                        transform: translateX(0rem);
+                        i{
+                            
+                            font-size: 0;
+                        
+                        }
+                    }
+                }
+            }
+            .signature {
+                display: none;
+            }
+            .socialnetwork {
+                display: none;
+            }
+        }
+    
+}

@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+$color-1: #67c7e4;
+$color-2: #08e8f063;
+$color-3: #d9f4fc;
+
+
+$borderRadius: 20px;
+$shadow: 0 1px 3px #333;
+
+@mixin Justify {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 1rem auto;
+    max-width: 2048px;
+    font-family: 'Rubik';
+    max-height: 1024px;
+    background-color: #333;
+}
+button {
+    cursor: pointer;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+a:visited {
+    color: #333;
+}
+.home, .knowledges, .portfolio, .contact {
+    display: flex;
+
+
+    @media screen and (max-width: 800px) {
+        display: block !important;
+        
+    }
+}
+
+.homecontent, .knowledgesContent, .portfolioContent, .contactContent {
+    margin-left: .4rem;
+    
+    @media screen and (max-width: 800px) {
+        margin-left: 0 !important;
+        
+    }
+}

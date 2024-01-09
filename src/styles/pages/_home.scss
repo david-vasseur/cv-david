@@ -1,0 +1,112 @@
+.home {
+    
+    .homeContent {
+        background: linear-gradient(139deg, $color-1 40%, transparent 100%);
+        border-radius: 20px;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        min-height: 600px;
+        margin-left: 10px;
+        box-shadow: 0px 0px 10px #357;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: inherit;
+            background: url("../../../public/media/code-1076536_1280.jpg") no-repeat center/cover;
+            z-index: -1;
+            filter: blur(2px) brightness(60%);
+
+        }
+
+        .content {
+            position: absolute;
+            top: 20%;
+            left: 13%;
+            
+            h1 {
+                font-size: 5rem;
+                text-transform: uppercase;
+                text-shadow: 0 5px 4px rgba(73, 70, 70, 0.651);
+                padding: 1rem 2rem;
+            }
+            h2 {
+                font-size: 2.5rem;
+                text-shadow: 0 5px 4px rgba(73, 70, 70, 0.651);
+                padding: 1rem 2rem;
+            }
+            .pdf {
+                padding: 5rem 2rem;
+                transition: 0.6s;
+                position: absolute;
+
+                &:hover {
+                    scale: 1.1;
+                    
+                }
+                a{
+                    font-size: 1.5rem;
+                    padding: 1rem 2rem;
+                    text-shadow: 0 5px 4px rgba(73, 70, 70, 0.651);
+                    border-radius: 18px;
+                    background-color: rgba(60, 94, 100, 0.712);
+                    color: aliceblue;
+                    transition: 0.6s;
+                    
+
+                    &:hover {
+                        background-color: rgba(34, 35, 36, 0.623);
+                        color: $color-1;
+                        border-radius: 30px;
+                        box-shadow: 0px 0px 5px 7px #357;
+                        
+                    }
+                }
+            }
+
+            .motivation {
+                background: rgba(0, 0, 0, 0.116);
+                position: absolute;
+                top: 200%;
+                border-radius: 20px;
+                padding: 1rem 1rem;
+                margin-left: 1.5rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+   .home {
+    .homeContent {
+        width: 100vw;
+        margin-left: 0;
+        max-height: none !important;
+        min-height: none !important;
+        height: 1055px;
+        margin: .2rem;
+
+        .content {
+            left: 0;
+            
+            h1 {
+                font-size: 3rem;
+                transform: translateY(-9rem);
+            }
+            h2 {
+                font-size: 1.5rem;
+                transform: translateY(-8rem);
+            }
+            .pdf {
+                transform: translateY(-7rem);
+            }
+            .motivation {
+                transform: translateY(-4rem);
+                margin-right: .8rem;
+            }
+        }
+    }
+}
+}
