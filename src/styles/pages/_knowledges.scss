@@ -23,7 +23,7 @@
             font-size: 1.4rem;
             margin-bottom: 1rem;
             text-transform: uppercase;
-            text-shadow: 0 5px 4px rgba(73, 70, 70, 0.651);
+            text-shadow: 0 5px 4px rgba(134, 132, 132, 0.7);
         }
 
         .formation {
@@ -167,7 +167,7 @@
 @media screen and (max-width: 800px) {
     .knowledges {
         margin: 0 !important;
-    .knowledgesContent {
+        .knowledgesContent {
         display: block !important;
         max-height: none !important;
         margin: 0 !important;
@@ -175,7 +175,7 @@
             margin: .2rem;
         }
         .relationnelOperationnel {
-            margin: 0 .2rem .2rem .2rem;
+            margin: 105px .2rem .2rem .2rem;
             gap: 2rem;
         }
         .otherSkills {

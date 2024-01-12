@@ -125,6 +125,10 @@
             width: 99% !important;
             max-width: none;
             margin: .2rem;
+            position: fixed;
+            z-index: 3;
+            max-height: 100px;
+            opacity: 0.7;
             .id {
                 display: none;
             
