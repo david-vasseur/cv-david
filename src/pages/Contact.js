@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from '../components/Navigation';
 import MapComponent from '../components/contact/MapComponent';
+import MessageMe from '../components/contact/MessageMe';
 
 const Contact = () => {
     let infos = [{number: '+33659127367',
                 location: 'Estezargues',
                 mail: 'p5y4@laposte.net',}]
+
+    const [showMessageMe, setShowMessageMe] = useState(false);
+
+    const handleShowMessageMe = () => {
+        setShowMessageMe(true);
+    };
+
+    const handleCloseMessageMe = () => {
+        setShowMessageMe(false);
+      };
 
     return (
         <div className='contact'>
@@ -22,7 +33,9 @@ const Contact = () => {
                         {infos[0].location}</h3>
                     <h3 className='mail'>
                         <img className='imageIcon' src="./media/email.png" alt="" />  
-                        {infos[0].mail}</h3>    
+                        {infos[0].mail}</h3>
+                    <a className='BuntonClick' href="#" onClick={handleShowMessageMe}>ENVOYEZ MOI UN MESSAGE !</a>  
+                    {showMessageMe && <MessageMe onClose={handleCloseMessageMe} />}  
                 </div>
             </div>
         </div>

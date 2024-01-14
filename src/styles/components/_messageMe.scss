@@ -1,0 +1,63 @@
+.MessageMeContent {
+    background: rgba(106, 210, 241, 0.493);
+    border-radius: 10px;
+    backdrop-filter: blur(9px);
+    box-shadow: 4px 4px 2px 5px #333;
+    position: absolute;
+    top: -15%;
+    left: 30%;
+    padding: 2rem 3rem;
+    min-height: 400px;
+    min-width: 500px;
+    .MessageMeForm {
+        padding: 2rem 1rem;
+        ul {
+            padding: 5rem 5rem 1rem 5rem;
+            li {
+                padding: 1rem;
+                label {
+                    padding: 0.5rem;
+                }
+                textarea {
+                    background: #333;
+                    margin-top: 1rem;
+                    border-radius: 10px;
+                    min-height: 2.5rem;
+                    margin-left: 6rem;
+                    min-width: 11rem;
+                    color: aliceblue;
+                    padding: 0.2rem;
+                    &::placeholder {
+                        padding: 0.1rem;
+                    }
+                }
+                input {
+                    border-radius: 10px;
+                    background: #333;
+                    color: aliceblue;
+                    padding: 0.2rem;
+                    margin-left: 6rem;
+                }
+            }
+        }
+    }
+    
+    
+    
+    .button {
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            margin-top: 10rem;
+            padding: 0.5rem 0.7rem;
+            border-radius: 10px;
+            background-color: #333;
+            color: aliceblue;
+            transition: 0.5s;
+            &:hover {
+                scale: 1.05;
+            }
+        }
+    }
+}

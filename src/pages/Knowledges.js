@@ -14,7 +14,6 @@ const Knowledges = () => {
                 <Formation />
                 <OtherSkills />
                 <Hobbies />
-
             </div>
         </div>
     );
